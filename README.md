@@ -49,7 +49,7 @@ Experimentally identify the "Ground Truth" Maximum Power Point (MPP).
   - **Fast Scan:** `num_steps=20`, `num_measurements=10` (Wiring validation).
   - **High-Res Scan:** `num_steps=50`, `num_measurements=200` (Curve plotting).
   - **Storage and Data transfer:** A .cvs file is saved on Raspberry Pi for each IV scan. Use Thonny IDE for Downloading Data on your PC. 
-- **Deliverable:** Run the MATLAB script **PLOT_IV_curves.m** for reading the .csv files and generating the I-V and P-V plots to define the target for the MPPT algorithm.
+- **Deliverable:** Run the script **PLOT_IV_curves.m** in the folder **MATLAB_IVplots** for reading the .csv files and generating the I-V and P-V plots to define the target for the MPPT algorithm.
 
 ### Phase 4: Control Loop Tuning (MPPT Performance)
 Optimize tracking speed vs. steady-state stability using the RP2350's processing power.
