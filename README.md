@@ -76,4 +76,4 @@ Optimize tracking speed vs. steady-state stability using the RP2350's processing
 
 
 ---
-Created by [@yGiovanni Petrone](https://github.com)
+Created by [@Giovanni Petrone](https://github.com)
