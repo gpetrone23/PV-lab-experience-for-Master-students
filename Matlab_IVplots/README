@@ -12,7 +12,7 @@ A MATLAB tool to analyze and visualize the electrical characteristics of photovo
 ## Repository Structure
 
 ```text
-├── pv-analysis.m          # Optimized MATLAB script
+├── PLOT_IV_curves.m       # Optimized MATLAB script
 ├── IVscanG75W.csv         # Sample dataset (Irradiance: 75 W/m²)
 ├── IVscanG150W.csv        # Sample dataset (Irradiance: 150 W/m²)
 ├── IVscanG225W.csv        # Sample dataset (Irradiance: 225 W/m²)
@@ -38,12 +38,12 @@ Files must follow the naming pattern `IVscanG[Value]W.csv` (e.g., `IVscanG150W.c
 
 1. Clone or download this repository.
 2. Place your target `.csv` files into the same directory as the MATLAB script.
-3. Open `pv-analysis.m` in MATLAB.
+3. Open `PLOT_IV_curves.m` in MATLAB.
 4. Update the `filename_V` cell array with your specific file names if they differ from the defaults.
 5. Run the script.
 
 ## Outputs
 
 The script generates a single figure window (`Figure 1`) displaying:
-1. **Left Plot:** Current vs. Voltage curves with dynamic axes showing a 5% safety margin above max values.
+1. **Left Plot:** Current vs. Voltage curves with dynamic axes adjustment.
 2. **Right Plot:** Power vs. Voltage curves tracking the specific trajectories of each irradiance level.
