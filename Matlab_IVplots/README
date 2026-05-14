@@ -1,1 +1,49 @@
-prova test
+# Photovoltaic Panel Analysis
+
+A MATLAB tool to analyze and visualize the electrical characteristics of photovoltaic (PV) panels. This script processes experimental data from CSV files to generate professional, publication-ready I-V (Current-Voltage) and P-V (Power-Voltage) curves.
+
+## Features
+
+* **Automated Data Import:** Reads PV panel metrics (`Vpan`, `Ipan`, `Ppan`) directly from structured CSV logs.
+* **Smart String Parsing:** Automatically extracts solar irradiance values ($G$) from filenames to build dynamic plot legends.
+* **Unified Scaling:** Computes global maximums across all datasets to ensure consistent axis limits.
+* **High-Quality Visualization:** Generates a side-by-side subplot layout optimized for academic reports and presentations.
+
+## Repository Structure
+
+```text
+├── pv-analysis.m          # Optimized MATLAB script
+├── IVscanG75W.csv         # Sample dataset (Irradiance: 75 W/m²)
+├── IVscanG150W.csv        # Sample dataset (Irradiance: 150 W/m²)
+├── IVscanG225W.csv        # Sample dataset (Irradiance: 225 W/m²)
+└── IVscanG375W.csv        # Sample dataset (Irradiance: 375 W/m²)
+```
+
+## Data Format
+
+The script expects CSV files containing a header row with at least the following column names:
+* `Vpan`: Panel Voltage in Volts (V)
+* `Ipan`: Panel Current in Amperes (A)
+* `Ppan`: Panel Power in Watts (W)
+
+### Filename Convention
+Files must follow the naming pattern `IVscanG[Value]W.csv` (e.g., `IVscanG150W.csv` for $150\text{ W/m}^2$) to allow correct automated legend generation.
+
+## Requirements
+
+* **MATLAB** (R2019b or newer recommended for `sgtitle` support).
+* No external toolboxes required.
+
+## Quick Start
+
+1. Clone or download this repository.
+2. Place your target `.csv` files into the same directory as the MATLAB script.
+3. Open `pv-analysis.m` in MATLAB.
+4. Update the `filename_V` cell array with your specific file names if they differ from the defaults.
+5. Run the script.
+
+## Outputs
+
+The script generates a single figure window (`Figure 1`) displaying:
+1. **Left Plot:** Current vs. Voltage curves with dynamic axes showing a 5% safety margin above max values.
+2. **Right Plot:** Power vs. Voltage curves tracking the specific trajectories of each irradiance level.
