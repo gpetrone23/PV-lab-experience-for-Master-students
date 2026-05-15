@@ -102,7 +102,8 @@ while True:
     print(f"PV Voltage:   {Vpan:.3f}V; PV current {Ipan:.3f}A")
     print(f"PV power: {Ppan:3f}W")
     print(f"Duty: {duty_cycle:2f}")
-    # Delay for readability
+    # Delay for settling MPPT sampling time
+    time.sleep(0.1) # change this value for tuning the MPPT sampling time
 
 
 
