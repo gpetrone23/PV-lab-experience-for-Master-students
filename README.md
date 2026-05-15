@@ -19,7 +19,7 @@ Establish the baseline performance of the PV panel under controlled irradiance c
 - **Irradiance Calculation ($G$):** Measured via $G = 750 \cdot V_{sol} - 300$ $W/m^2$.
 - **Static Metrics:** Measure $V_{oc}$ (Open Circuit Voltage) and $I_{sc}$ (Short Circuit Current).
 - **Deliverable:** A baseline table correlating $W/m^2$ with photovoltaic electrical parameters.
-This table establishes the PV panel's baseline performance under controlled irradiance from the LED matrix. Irradiance is calculated by measuring the output voltage (**$V_{sol}$**) of solarimeter and using the formula: $G = 750 \cdot V_{sol} - 300$ [$W/m^2$].
+This table establishes the PV panel's baseline performance under controlled irradiance from the LED matrix. Irradiance is calculated by measuring the output voltage (**$V_{sol}$**) of solarimeter and using the formula: $G = 750 \cdot V_{sol} - 300$ [ $W/m^2$ ].
 
 
 | # exp |LED current| $V_{sol}$ [V] | Irradiance ($G$) [$W/m^2$] | $V_{oc}$ [V] | $I_{sc}$ [A] |
